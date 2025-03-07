@@ -72,3 +72,28 @@ body {
     height: 100%;
     border: none;
 }
+#polygon-info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#polygon-info h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#polygon-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#polygon-info li {
+    font-size: 16px;
+    margin: 5px 0;
+}

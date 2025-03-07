@@ -43,7 +43,20 @@
         <div id="map-right"></div> <!-- Mapa Esri World Imagery -->
     </div>
     <script src="https://rawgit.com/jieter/Leaflet.Sync/master/L.Map.Sync.js"></script>
-
+    <div id="polygon-info">
+        <h2>Datos del Barrio Capellanía</h2>
+        <ul>
+            <li><strong>Área:</strong> <span id="area"></span> m²</li>
+            <li><strong>Perímetro:</strong> <span id="perimeter"></span> m</li>
+            <li><strong>Centroide:</strong> <span id="centroid"></span></li>
+            <li><strong>Bounding Box:</strong> <span id="bbox"></span></li>
+            <li><strong>Vértices:</strong> <span id="vertices"></span></li>
+        </ul>
+    </div>
+    
+    <!-- Cargar Turf.js -->
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    
     <!-- Archivo JavaScript principal -->
     <script src="programa.js"></script>
 </body>
