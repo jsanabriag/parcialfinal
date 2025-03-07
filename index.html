@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capellanía - Fontibón</title>
+    
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Leaflet Side-by-Side (Slider) -->
+    <script src="https://unpkg.com/leaflet-side-by-side"></script>
+
 </head>
 <body>
     <div class="container">
@@ -22,8 +34,17 @@
                 </p>
             </div>
         </div>
-    </div>
 
+        <!-- Contenedor para el mapa -->
+        <div id="map"></div>
+    </div>
+    <div class="map-container">
+        <div id="map-left"></div>  <!-- Mapa OpenStreetMap -->
+        <div id="map-right"></div> <!-- Mapa Esri World Imagery -->
+    </div>
+    <script src="https://rawgit.com/jieter/Leaflet.Sync/master/L.Map.Sync.js"></script>
+
+    <!-- Archivo JavaScript principal -->
     <script src="programa.js"></script>
 </body>
 </html>

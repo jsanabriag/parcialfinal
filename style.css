@@ -8,20 +8,22 @@ body {
 
 .container {
     position: relative;
-    width: 230%;
-    max-width: 1600px; /* Mayor tamaño para la imagen */
-    margin: 50px auto;
+    width: 100%;
+    max-width: 1200px; /* Ajuste al ancho de la imagen */
+    margin: 0 auto; /* Elimina el margen superior e inferior */
+    padding-bottom: 0; /* Evita espacio adicional */
 }
 
+/* Contenedor de la imagen */
 .image-container {
     position: relative;
-    display: inline-block;
     width: 100%;
+    margin-bottom: 0px; /* Elimina el espacio debajo de la imagen */
 }
 
 .image-container img {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -37,24 +39,36 @@ body {
     width: 90%;
 }
 
-/* Texto en la parte superior */
 .top-text {
-    top: 10%; /* Ubica el título arriba de la imagen */
+    top: 10%;
 }
 
-/* Texto en la parte inferior */
 .bottom-text {
-    bottom: 5%; /* Mueve el texto a la parte inferior de la imagen */
+    bottom: 5%;
     font-size: 14px;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro detrás del texto */
     padding: 5px 10px;
-    border-radius: 5px;
     display: inline-block;
 }
 
-/* Estilo del enlace */
 .bottom-text a {
-    color: white;
+    color: black;
     text-decoration: underline;
     font-weight: normal;
+}
+
+/* Contenedor de los mapas */
+.map-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho al de la imagen */
+    height: 500px;
+    margin: 0 auto; /* Centrar los mapas */
+    padding: 0;
+}
+
+/* Mapas individuales */
+#map-left, #map-right {
+    flex: 1;
+    height: 100%;
+    border: none;
 }
